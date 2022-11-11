@@ -1,0 +1,41 @@
+{
+  "name": "lit-typescript-starter",
+  "version": "1.0.0",
+  "description": "plain starter with the bare minimum",
+  "main": "build/index.mjs",
+  "files": ["build"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite --config vite.config.ts",
+    "lint": "eslint . --ext .ts",
+    "lint.fix": "eslint . --ext .ts --fix",
+    "build": "vite build --config vite.config.ts && npx tsc --declaration --emitDeclarationOnly --outfile build/index.d.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finreinhard/lit-typescript-starter.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finreinhard/lit-typescript-starter/issues"
+  },
+  "homepage": "https://github.com/finreinhard/lit-typescript-starter#readme",
+  "dependencies": {
+    "lit": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.9",
+    "@typescript-eslint/eslint-plugin": "5.42.1",
+    "@typescript-eslint/parser": "5.42.1",
+    "@webcomponents/webcomponentsjs": "2.7.0",
+    "eslint": "8.27.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "prettier": "2.7.1",
+    "typescript": "4.8.4",
+    "vite": "3.2.3"
+  }
+}
